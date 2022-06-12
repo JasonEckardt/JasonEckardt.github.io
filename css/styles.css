@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: rgb(52, 152, 219);
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  padding-top: 70px;
+}
+
+/* Style the header */
+.header {
+  padding: 30px;
+  text-align: left;
+  font-size: 35px;
+  color: rgb(15, 82, 186);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 20px;
+  background-color: rgb(40, 40, 43);
+  color: white;
+}
+
+.left,
+.right {
+  width: 25%;
+}
+
+.left-large {
+  width: 75%;
+}
+
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  background-color: rgb(40, 40, 43);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.image-responsive {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.image-responsive-small {
+  max-width: 12%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.item-lg {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.item-sm {
+  color: white;
+  text-decoration: none;
+}
+
+.external-links-box {
+  margin-top: 50%
+}
+
+ul.no-bullets {
+  list-style: none;
+  padding-left: 0;
+
+}
+
+.external-links-box-item {
+  padding: 20px;
+  text-decoration: none;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  color: black;
+}
+
+.card-item {
+  color: black;
+}
+
+.linkedin:hover {
+  color: rgb(0, 123, 181);
+}
+
+.github:hover {
+  color: rgb(18, 86, 136);
+}
+
+.twitch:hover {
+  color: rgb(169, 112, 255);
+}
+
+.youtube:hover {
+  color: rgb(207, 76, 76);
+}
+
+.gallery {
+  margin: 10px 50px;
+  background-color: rgb(40, 40, 43);
+}
+
+.gallery img {
+  transition: 1s;
+  padding: 15px;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .gallery img {
+    width: 100%;
+  }
+}
